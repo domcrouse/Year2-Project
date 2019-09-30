@@ -29,14 +29,14 @@ public class PlayerMovement : MonoBehaviour
         Vector3 direction = new Vector3 (h, 0, v);
         Vector3 velocity = direction * moveSpeed;
 
-        if(charController.isGrounded){
+        if(charController.isGrounded)Debug.Log("456");{
             if(Input.GetButtonDown("Jump"))
             {
                 yVelocity = jumpSpeed;
             }else{
                 yVelocity-= gravity;
             }
-            velocity.y = yVelocity;
+            velocity = new Vector3(velocity.x, yVelocity, velocity.z);
             
             velocity = transform.TransformDirection (velocity);
 
