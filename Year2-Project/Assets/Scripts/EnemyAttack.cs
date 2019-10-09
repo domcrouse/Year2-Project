@@ -6,16 +6,21 @@ public class EnemyAttack : MonoBehaviour
 {
     float nextAttackTrue = -1.0f;
     [SerializeField] float AttackDelay = 1.0f;
-    [SerializeField] int damaageDealt =5;
+    [SerializeField] int damageDealt =5;
     // Start is called before the first frame update
 
     void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player"&&Time.time>=nextAttackTrue)
+        if (other.tag == "Player" && Time.time>=nextAttackTrue)
         {
-            Health playerHelth = other.GetComponent<Health>();
-            playerHelth.Damage(damaageDealt);
+
+Debug.Log("hit player");
+
+            Health playerHealth = other.GetComponent<Health>();
+            playerHealth.Damage(damageDealt);
             nextAttackTrue = Time.time + AttackDelay;
+
+            Debug.Log(playerHealth.getHealth());
         }
     }
     void Start()

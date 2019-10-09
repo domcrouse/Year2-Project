@@ -22,8 +22,10 @@ public class ShootingScript : MonoBehaviour
             Cursor.visible = false;
             Ray mouseRay = GetComponentInChildren<Camera>().ViewportPointToRay(new Vector3(0.5f ,0.5f, 0));
             RaycastHit hitinfo;
+            
             if(Physics.Raycast(mouseRay, out hitinfo))
             {
+                Debug.Log("shot");
                 Debug.DrawLine(transform.position, hitinfo.point, Color.red, 5.0f);
                 Health enemyHealth = hitinfo.transform.GetComponent<Health>();
                 if(enemyHealth !=null)
