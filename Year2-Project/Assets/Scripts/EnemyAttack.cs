@@ -14,7 +14,7 @@ public class EnemyAttack : MonoBehaviour
         if (other.tag == "Player" && Time.time>=nextAttackTrue)
         {
 
-Debug.Log("hit player");
+            Debug.Log("hit player");
 
             Health playerHealth = other.GetComponent<Health>();
             playerHealth.Damage(damageDealt);
@@ -22,15 +22,5 @@ Debug.Log("hit player");
 
             Debug.Log(playerHealth.getHealth());
         }
-    }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

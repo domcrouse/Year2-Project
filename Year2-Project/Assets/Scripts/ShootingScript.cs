@@ -9,7 +9,7 @@ public class ShootingScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState=CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
@@ -20,14 +20,16 @@ public class ShootingScript : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            Ray mouseRay = GetComponentInChildren<Camera>().ViewportPointToRay(new Vector3(0.5f ,0.5f, 0));
-            RaycastHit hitinfo;
-            
+        }
+        Ray mouseRay = GetComponentInChildren<Camera>().ViewportPointToRay(new Vector3(0.5f ,0.5f, 0));
+        RaycastHit hitinfo;
+        
+        if(Input.GetButtonDown("Fire1")){
             if(Physics.Raycast(mouseRay, out hitinfo))
             {
-                Debug.Log("shot");
-                Debug.DrawLine(transform.position, hitinfo.point, Color.red, 5.0f);
-                Health enemyHealth = hitinfo.transform.GetComponent<Health>();
+                Debug.Log(hitinfo.collider.gameObject.name);
+                Health enemyHealth = hitinfo.collider.gameObject.GetComponent<Health>();
+
                 if(enemyHealth !=null)
                 {
                     enemyHealth.Damage(damageDealt);
