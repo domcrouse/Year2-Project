@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class ShootingScript : MonoBehaviour
 {
-    [SerializeField] int damageDealt=20;
+    [SerializeField] int damageDealt = 20;
+    [SerializeField] LayerMask layermask;
 
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        layermask |= Physics.IgnoreRaycastLayer;
+        layermask = ~layermask;
     }
 
     // Update is called once per frame
@@ -25,7 +28,7 @@ public class ShootingScript : MonoBehaviour
         RaycastHit hitinfo;
         
         if(Input.GetButtonDown("Fire1")){
-            if(Physics.Raycast(mouseRay, out hitinfo))
+            if(Physics.Raycast(mouseRay, out hitinfo, 100, layermask))
             {
                 Debug.Log(hitinfo.collider.gameObject.name);
                 Health enemyHealth = hitinfo.collider.gameObject.GetComponent<Health>();
