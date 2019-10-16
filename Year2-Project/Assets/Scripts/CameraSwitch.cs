@@ -18,7 +18,7 @@ public class CameraSwitch : MonoBehaviour
     {
         Debug.DrawRay(transform.position, (transform.position + (new Vector3 (20 , 0, 0))), Color.red);
 
-        if (Physics.Raycast(transform.position, transform.right, 20))
+        if (Physics.Raycast(transform.position, transform.right, 10))
         {
             Debug.Log("hit");
             Camera1.SetActive(false);

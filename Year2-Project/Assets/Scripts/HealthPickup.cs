@@ -15,6 +15,7 @@ public class HealthPickup : MonoBehaviour
                 {
                     GetComponent<MeshRenderer>().enabled = false;
                     health.Damage(-HealVal);
+                    Destroy(gameObject);
                     Debug.Log("Health");
                 }
     }

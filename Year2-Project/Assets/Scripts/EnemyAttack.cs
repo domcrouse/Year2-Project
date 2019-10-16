@@ -11,7 +11,7 @@ public class EnemyAttack : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && Time.time>=nextAttackTrue)
+        if (other.tag == "Player" && Time.time >= nextAttackTrue)
         {
 
             Debug.Log("hit player");
