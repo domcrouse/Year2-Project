@@ -7,7 +7,7 @@ public class ChangeSceneScript : MonoBehaviour
 {
     public void loadMain()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level_1");
     }
 
     public void exitGame()

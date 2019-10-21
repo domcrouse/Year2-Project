@@ -1492,10 +1492,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 762192d298e7d3b4d9dd947b739eb0f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
-  Score: {fileID: 0}
-  playerHealthText: {fileID: 0}
-  timeTxt: {fileID: 0}
+  playerHealth: {fileID: 479477259}
+  Score: {fileID: 1137206343}
+  playerHealthText: {fileID: 977451901}
+  timeTxt: {fileID: 2037076135}
 --- !u!4 &1383529359
 Transform:
   m_ObjectHideFlags: 0

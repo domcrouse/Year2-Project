@@ -27,12 +27,6 @@ public class UIScript : MonoBehaviour
         healthBar.value = healthScript.getHealth();
         healthTxt.text = "Health:" + healthScript.getHealth();
     }
-    void Update()
-    {
-        timeNum.text = "Time: " + (int)Time.time;
-        scoreNum.text = "Score: " + score;
-    }
-    
     IEnumerator updateUI()
         {
             healthBar.value = healthScript.getHealth();
@@ -49,6 +43,13 @@ public class UIScript : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             StartCoroutine("updateUI");
         }
+    
+    void Update()
+    {
+        timeNum.text = "Time: " + (int)Time.time;
+        scoreNum.text = "Score: " + score;
+    }
+
     public static void updateScore(int amount)
     {
         score += amount;
