@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7877504054652892214}
   - component: {fileID: 7877504054652892209}
   - component: {fileID: 7877504054652892212}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: EnemyAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 7877504054872310149}
   - component: {fileID: 7877504054872310148}
   - component: {fileID: 7877504054872310150}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy Normal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,3 +252,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
