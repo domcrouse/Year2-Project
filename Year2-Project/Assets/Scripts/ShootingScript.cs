@@ -30,7 +30,6 @@ public class ShootingScript : MonoBehaviour
         if(Input.GetButtonDown("Fire1")){
             if(Physics.Raycast(mouseRay, out hitinfo, 100, layermask))
             {
-                Debug.Log(hitinfo.collider.gameObject.name);
                 Health enemyHealth = hitinfo.collider.gameObject.GetComponent<Health>();
 
                 if(enemyHealth !=null)

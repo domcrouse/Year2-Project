@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
-
+    Transform Player;
     Animator Dooranim;
 
-    bool isopen = true;
+    bool isopen;
 
     // Start is called before the first frame update
     void Start()
     {
         Dooranim = GetComponent<Animator>();
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
@@ -20,15 +21,18 @@ public class DoorScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if(isopen)
+            if (Vector3.Distance(transform.position, Player.position)<5)
             {
-                Dooranim.SetTrigger("CloseDoor");
+                if(isopen)
+                {
+                    Dooranim.SetTrigger("CloseDoor");
+                }
+                else
+                {
+                    Dooranim.SetTrigger("OpenDoor");
+                }
+                isopen = !isopen;
             }
-            else
-            {
-                Dooranim.SetTrigger("OpenDoor");
-            }
-            isopen = !isopen;
         }
     }
 }
