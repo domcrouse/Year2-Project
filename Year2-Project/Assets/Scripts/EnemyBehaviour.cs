@@ -30,12 +30,10 @@ public class EnemyBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(controller.isGrounded){
-            yVelocity-= gravity;
-        }
+        
         Vector3 direction = PlayerModel.position - transform.position;
         transform.LookAt(PlayerModel.transform);
-        controller.Move (transform.forward * MoveSpeed * Time.deltaTime);
+        controller.Move (transform.forward * MoveSpeed * Time.deltaTime + new Vector3(0, yVelocity, 0));
         
         float Distance = Vector3.Distance(PlayerModel.transform.position, transform.position);
 
@@ -45,6 +43,11 @@ public class EnemyBehaviour : MonoBehaviour
             targetDir.y = 0;
             Enemy.rotation = Quaternion.Slerp(Enemy.rotation, Quaternion.LookRotation(targetDir), rotationSpeed * Time.deltaTime);
             PlayerModel.position += Enemy.forward * MoveSpeed * Time.deltaTime;
+        }
+
+        if(!controller.isGrounded){
+            yVelocity-= gravity;
+
         }
     }
 }

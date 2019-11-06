@@ -36,8 +36,6 @@ public class PlayerMovement : MonoBehaviour
             if(Input.GetButtonDown("Jump")){
                 yVelocity = jumpSpeed;
             }
-
-            
         }
 
         velocity = new Vector3(velocity.x, yVelocity, velocity.z);

@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 6
-  gravity: 1
+  gravity: 5
   rotationSpeed: 5
   Enemy: {fileID: 7877504054872310153}
   maxDistance: 0
