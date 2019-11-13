@@ -12,10 +12,8 @@ public class BombScript : MonoBehaviour
 
         if (health != null && collider.tag == "Player")
         {
-            GetComponent<MeshRenderer>().enabled = false;
             health.Damage(doDamage);
             Destroy(gameObject);
-            Debug.Log("Boom");
         }
     }
 }

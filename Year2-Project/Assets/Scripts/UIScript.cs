@@ -26,6 +26,10 @@ public class UIScript : MonoBehaviour
         healthBar.maxValue = healthScript.getMaxHealth();
         healthBar.value = healthScript.getHealth();
         healthTxt.text = "Health:" + healthScript.getHealth();
+
+        Debug.Log("From health script " + healthScript.getHealth());
+
+        StartCoroutine("updateUI");
     }
     IEnumerator updateUI()
         {
@@ -33,6 +37,8 @@ public class UIScript : MonoBehaviour
             healthTxt.text = "Health: " + healthScript.getHealth();
             timeNum.text = "Time: " + (int)Time.time;
             scoreNum.text = "Score: " + score;
+
+            Debug.Log("From health script " + healthScript.getHealth());
 
             if (healthScript.isDead)
             {
@@ -43,12 +49,6 @@ public class UIScript : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             StartCoroutine("updateUI");
         }
-    
-    void Update()
-    {
-        timeNum.text = "Time: " + (int)Time.time;
-        scoreNum.text = "Score: " + score;
-    }
 
     public static void updateScore(int amount)
     {
