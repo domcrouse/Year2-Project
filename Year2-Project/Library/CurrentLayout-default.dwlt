@@ -439,9 +439,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fc390000
-      m_LastClickedID: 14844
-      m_ExpandedIDs: 1af3ffffd2390000d6390000143a0000
+      m_SelectedIDs: 6e3b0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 20c8ffff1ad2ffff28e8ffff1af3ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -501,9 +501,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 107.016235, y: 297.1937, z: 0}
+    m_Target: {x: 0.37267828, y: 17.293808, z: 11.477429}
     speed: 2
-    m_Value: {x: 107.01619, y: 297.19357, z: -0.0000041331255}
+    m_Value: {x: 0.37267828, y: 17.293808, z: 11.477429}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -532,20 +532,20 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.20611247, y: -0.10487528, z: 0.022253074, w: -0.9727104}
+    m_Target: {x: -0.020592617, y: -0.25743797, z: 0.0054807593, w: -0.9661355}
     speed: 2
-    m_Value: {x: -0.20609786, y: -0.104867846, z: 0.022251496, w: -0.9726414}
+    m_Value: {x: -0.024938097, y: -0.2573919, z: 0.006639002, w: -0.96596247}
   m_Size:
-    m_Target: 70.280655
+    m_Target: 12.912341
     speed: 2
-    m_Value: 70.280624
+    m_Value: 13.520776
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.49748743
+    m_Speed: 0.9
+    m_SpeedNormalized: 0.46748742
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\DMartin\Documents\GitHub\Year2-Project\Year2-Project
+  m_LastProjectPath: C:\Users\Dmartin\Documents\GitHub\Year2-Project\Year2-Project\Year2-Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -1124,8 +1124,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000283d0000263d0000e452000088560000362d0000663d0000de3400006a3e0000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000283d0000263d0000e452000088560000362d0000663d0000de3400006a3e00000e3b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
