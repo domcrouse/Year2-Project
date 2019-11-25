@@ -36,7 +36,10 @@ Shader "Aura 2/Particles/Additive"
 				Tags{ "IgnoreProjector"="True" "PreviewType"="Plane" }
 				Tags { "RenderType"="Transparent" "Queue"="Transparent" }
 				ColorMask RGB
-				Cull Off Lighting Off ZWrite Off
+				Cull Back
+				Lighting Off
+				ZWrite Off
+				ZTest LEqual
 
 				Blend One One
 					

@@ -78,9 +78,10 @@ Shader "Aura 2/Particles/Alpha Test"
 				Tags{ "IgnoreProjector"="True" "PreviewType"="Plane" }
 				Tags { "RenderType"="Transparent" "Queue"="Transparent" }
 				ColorMask RGB
-				Cull Off
+				Cull Back
 				Lighting Off
 				ZWrite On
+				ZTest LEqual
 
 				CGPROGRAM
 					#pragma vertex vert

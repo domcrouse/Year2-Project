@@ -36,7 +36,10 @@ Shader "Aura 2/Particles/Alpha Blend"
 			
 				Tags{ "Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent" "PreviewType"="Plane" }
 				ColorMask RGB
-				Cull Off Lighting Off ZWrite Off
+				Cull Back
+				Lighting Off
+				ZWrite Off
+				ZTest LEqual
 
 				Blend SrcAlpha OneMinusSrcAlpha
 
