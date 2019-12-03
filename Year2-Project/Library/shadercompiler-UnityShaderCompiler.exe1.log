@@ -8,12 +8,6 @@ Cmd: compileComputeKernel
   api=4 insize=4258 outsize=0 ok=0
 Cmd: compileComputeKernel
   error: 2 plat 4 at CommonFunctions.cginc(20): failed to open source file: 'DepthAccumulation.cginc'
-  api=4 insize=4219 outsize=0 ok=0
-Cmd: compileComputeKernel
-  error: 2 plat 4 at CommonFunctions.cginc(20): failed to open source file: 'DepthAccumulation.cginc'
-  api=4 insize=8159 outsize=0 ok=0
-Cmd: compileComputeKernel
-  error: 2 plat 4 at CommonFunctions.cginc(20): failed to open source file: 'DepthAccumulation.cginc'
   api=4 insize=8159 outsize=0 ok=0
 Cmd: compileComputeKernel
   error: 2 plat 4 at CommonFunctions.cginc(20): failed to open source file: 'DepthAccumulation.cginc'
