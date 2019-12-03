@@ -439,9 +439,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 84290000
       m_LastClickedID: 0
-      m_ExpandedIDs: 10fbffff
+      m_ExpandedIDs: 78fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -534,11 +534,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.111194335, y: -0.56026864, z: 0.076393075, w: -0.81734824}
     speed: 2
-    m_Value: {x: -0.11241116, y: -0.56010884, z: 0.07722743, w: -0.8171155}
+    m_Value: {x: 0.11119434, y: 0.56026864, z: -0.07639308, w: 0.8173483}
   m_Size:
     m_Target: 17.407822
     speed: 2
-    m_Value: 18.228085
+    m_Value: 17.407822
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1056,20 +1056,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Dmartin\Documents\GitHub\Year2-Project\Year2-Project\Year2-Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 00340000
-    m_LastClickedID: 13312
-    m_ExpandedIDs: 0000000026310000ce32000000330000a6330000e0330000583400009a350000da3500000a360000323600002a3900002c39000000ca9a3b
+    m_SelectedIDs: 36330000
+    m_LastClickedID: 13110
+    m_ExpandedIDs: 00000000282e0000d02f000002300000a8300000e23000005c3100009e320000de3200000e330000363300004c3600004e36000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1097,7 +1097,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000026310000ce32000000330000a6330000e0330000583400009a350000da3500000a360000323600002a3900002c390000
+    m_ExpandedIDs: 00000000282e0000d02f000002300000a8300000e23000005c3100009e320000de3200000e330000363300004c3600004e360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1124,7 +1124,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000283d0000263d0000e452000088560000362d0000663d0000de3400006a3e00000e3b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
